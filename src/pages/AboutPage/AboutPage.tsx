@@ -1,7 +1,11 @@
 import React from 'react';
 import './AboutPage.scss';
+import AboutUs from '../../components/AboutUs/AboutUs'
 const AboutPage: React.FC = () => {
-  return <div className="container">about page</div>;
+  
+  return (
+    <AboutUs />
+  )
 };
 
 export default AboutPage;

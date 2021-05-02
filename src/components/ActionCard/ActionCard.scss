@@ -1,10 +1,15 @@
 .action {
+  width: 90%;
   height: 300px;
-  background-color: yellow;
-  display: flex;
-  flex: 0 1 auto;
+  margin: 40px auto;
   .action-container {
-    width: 340px;
-    background-color: #Fafafa;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    h3 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+    }
   }
 }

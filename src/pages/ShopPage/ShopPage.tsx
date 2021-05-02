@@ -1,7 +1,10 @@
 import React from 'react';
 import './ShopPage.scss';
+import ProductCollapse from '../../components/ProguctCollapse/ProductCollapse'
 const ShopPage: React.FC = () => {
-  return <div className="container">shop page</div>;
+  return (
+    <ProductCollapse />
+  )
 };
 
 export default ShopPage;
