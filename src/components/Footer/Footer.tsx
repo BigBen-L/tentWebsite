@@ -4,7 +4,7 @@ import './Footer.scss';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div>EasyGrade</div>
+      <div>Aus & Glamper</div>
       <div>Copyright © 2021</div>
     </footer>
   );

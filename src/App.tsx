@@ -7,6 +7,7 @@ import ShopPage from './pages/ShopPage/ShopPage';
 import GalleryPage from './pages/GalleryPage/GalleryPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/gallery" component={GalleryPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
       <Footer />
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutPage.scss';
 const AboutPage: React.FC = () => {
-  return <div>about page</div>;
+  return <div className="container">about page</div>;
 };
 
 export default AboutPage;
