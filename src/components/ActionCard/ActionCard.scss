@@ -3,13 +3,18 @@
   height: 300px;
   margin: 40px auto;
   .action-container {
-    border: 1px solid black;
     text-align: center;
     vertical-align: middle;
+    border: 1px solid black;
     h3 {
       font-size: 24px;
       font-weight: 400;
       line-height: 40px;
     }
+    // .action-container-img {
+    //   width: 100%;
+    //   height: 100%;
+    //   border: 1px solid #fafafa;
+    // }
   }
 }

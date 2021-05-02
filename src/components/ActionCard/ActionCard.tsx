@@ -13,6 +13,7 @@ const ActionCard: React.FC = () => {
             <h3 className={`action-container-head`}>
               About Us
             </h3>
+            {/* <img className={'action-container-img'} src="./img/homepage/3.jpg" alt=""/> */}
           </Link>
         </Col>
         <Col span={7} className={`action-container`}>
@@ -20,6 +21,7 @@ const ActionCard: React.FC = () => {
             <h3 className={`action-container-head`}>
               Shop
             </h3>
+            {/* <img className={'action-container-img'} src="./img/homepage/2.jpg" alt=""/> */}
           </Link>
         </Col>
         <Col span={7} className={`action-container`}>
@@ -27,6 +29,7 @@ const ActionCard: React.FC = () => {
             <h3 className={`action-container-head`}>
               Gallery
             </h3>
+            {/* <img className={'action-container-img'} src="./img/homepage/4.jpg" alt=""/> */}
           </Link>
         </Col>
       </Row>
