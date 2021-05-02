@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+
+.contact-page {
+  &__text {
+	margin-top: 30px;
+
+	h2 {
+	  color: $blue-primary;
+	  font-size: 20px;
+	  font-weight: 600;
+	}
+
+	p {
+	  font-size: 17px;
+	  font-weight: 500;
+	}
+  }
+  .google-map {
+	text-align: center;
+	iframe {
+	  width: 100%;
+	}
+  }
+
+}
