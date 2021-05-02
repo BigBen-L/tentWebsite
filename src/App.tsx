@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <MainNav />
       <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/shop/:tentId" component={ShopPage} />
+        <Route path="/shop" component={ShopPage} />
         <Route path="/gallery" component={GalleryPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/contact" component={ContactPage} />
