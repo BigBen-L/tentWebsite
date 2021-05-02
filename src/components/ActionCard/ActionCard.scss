@@ -1,0 +1,10 @@
+.action {
+  height: 300px;
+  background-color: yellow;
+  display: flex;
+  flex: 0 1 auto;
+  .action-container {
+    width: 340px;
+    background-color: #Fafafa;
+  }
+}
