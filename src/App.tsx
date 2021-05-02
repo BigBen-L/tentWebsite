@@ -1,13 +1,25 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './pages/LandingPage/LandingPage';
+import MainNav from './components/MainNav/MainNav';
+import Footer from './components/Footer/Footer';
+import ShopPage from './pages/ShopPage/ShopPage';
+import GalleryPage from './pages/GalleryPage/GalleryPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 
-const App: React.FC = (props: any) => {
+const App: React.FC = () => {
   return (
     <div className="App">
+      <MainNav />
       <Switch>
-        <Route path="/" component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route path="/gallery" component={GalleryPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
       </Switch>
+      <Footer />
     </div>
   );
 };

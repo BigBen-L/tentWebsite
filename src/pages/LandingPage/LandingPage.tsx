@@ -4,12 +4,10 @@ import { Row, Col, Space } from 'antd';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { CalculatorFilled, CheckCircleFilled, MessageFilled, RightOutlined } from '@ant-design/icons';
-import MainNav from '../../components/MainNav/MainNav';
 
 const LandingPage: React.FC = () => {
   return (
     <>
-      <MainNav />
       <main className="landing-page">
         <section className="intro">
           <div className="container">
@@ -174,10 +172,6 @@ const LandingPage: React.FC = () => {
           {/*<img src={joinWave2} alt="wave svg" />*/}
         </section>
       </main>
-      <footer>
-        <div>EasyGrade</div>
-        <div>Copyright © 2021</div>
-      </footer>
     </>
   );
 };
