@@ -1,8 +1,6 @@
 import React from 'react';
 import './MainNav.scss';
-import { Link, NavLink } from 'react-router-dom';
-import { Button } from 'antd';
-import logoWhite from '../../../public/img/logo-white.svg';
+import { NavLink } from 'react-router-dom';
 
 interface INavLink {
   title: string;
@@ -27,9 +25,9 @@ const MainNav: React.FC = () => {
         <div className="landing-nav__wrap">
           <ul>
             {links.map((item: INavLink) => (
-              <li key={item.path}>
-                <NavLink to={item.path}>{item.title}</NavLink>
-              </li>
+              <NavLink to={item.path} key={item.path}>
+                <li>{item.title}</li>
+              </NavLink>
             ))}
           </ul>
         </div>
