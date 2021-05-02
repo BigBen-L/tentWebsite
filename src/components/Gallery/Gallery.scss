@@ -1,0 +1,8 @@
+.gallery-container {
+  margin: 50px 80px;
+  font-size: 30px;
+  font-weight: 500;
+  .ant-image-img, .img-body{
+    height: 100% !important;
+  }
+}
