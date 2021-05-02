@@ -4,27 +4,12 @@ import { Row, Col, Space } from 'antd';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 import { CalculatorFilled, CheckCircleFilled, MessageFilled, RightOutlined } from '@ant-design/icons';
+import MainNav from '../../components/MainNav/MainNav';
 
 const LandingPage: React.FC = () => {
   return (
     <>
-      <nav className="landing-nav">
-        <div className="container">
-          {/*<img className="landing-nav__logo" src={logo} alt="logo" />*/}
-          <div className="landing-nav__wrap">
-            <Link to="/sign-up">
-              <Button className="ant-btn-ghost--theme-white" type="ghost">
-                Sign Up
-              </Button>
-            </Link>
-            <Link to="/sign-in">
-              <Button className="ant-btn-ghost--theme-white" type="ghost">
-                Sign In
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <MainNav />
       <main className="landing-page">
         <section className="intro">
           <div className="container">
@@ -84,9 +69,7 @@ const LandingPage: React.FC = () => {
             </Row>
           </div>
         </section>
-        <section className="process">
-          {/*<img src={processImg} alt="process img" />*/}
-        </section>
+        <section className="process">{/*<img src={processImg} alt="process img" />*/}</section>
         <section className="features">
           <div className="container">
             <Row>
@@ -167,9 +150,7 @@ const LandingPage: React.FC = () => {
                 <p>Powerful Coordinating platform makes teamwork easier.</p>
                 <Button size="large">Learn more about how to connect with class</Button>
               </Col>
-              <Col span={12}>
-                {/*<img src={teamworkImg} alt="teamwork img" />*/}
-              </Col>
+              <Col span={12}>{/*<img src={teamworkImg} alt="teamwork img" />*/}</Col>
             </Row>
           </div>
         </section>

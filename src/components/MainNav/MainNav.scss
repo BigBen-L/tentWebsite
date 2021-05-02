@@ -1,0 +1,53 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/media-queries';
+
+.landing-nav {
+  background-color: $blue-primary;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 50;
+
+  .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  &__logo {
+	width: 146px;
+	cursor: pointer;
+  }
+
+  &__wrap {
+	display: flex;
+	align-items: center;
+
+	ul {
+	  font-size: 17px;
+	  display: flex;
+	  align-items: center;
+	  list-style: none;
+	  margin: 0 20px 0 0;
+
+	  li {
+		color: $white-light;
+		padding: 4px 16px;
+		border-bottom: solid transparent 2px;
+		transition: border-bottom-color 0.2s ease-in, color 0.2s ease-in;
+
+		&:hover {
+		  color: white;
+		  border-bottom: solid white 2px;
+		  cursor: pointer;
+		}
+	  }
+	}
+
+	.ant-btn {
+	  margin-left: 16px;
+	}
+  }
+}
