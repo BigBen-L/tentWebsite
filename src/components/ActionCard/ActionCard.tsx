@@ -1,36 +1,35 @@
 import React from 'react';
 import './ActionCard.scss';
+import { Row, Col } from 'antd';
+import { Link } from 'react-router-dom';
 
 const ActionCard: React.FC = () => {
 
   return (
     <>
-      <div className={'action'}>
-        <div className= {`action-container`}>
-          <h3 className={`action-container-head`}>
-            About Us
-          </h3>
-          <div className={`action-container-body`}>
-
-          </div>
-        </div>
-        <div className= {`action-container`}>
-          <h3 className={`action-container-head`}>
-            Shop
-          </h3>
-          <div className={`action-container-body`}>
-
-          </div>
-        </div>
-        <div className= {`action-container`}>
-          <h3 className={`action-container-head`}>
-            Gallery
-          </h3>
-          <div className={`action-container-body`}>
-
-          </div>
-        </div>
-      </div>
+      <Row className={'action'} justify="space-between">
+        <Col span={7} className={`action-container`}>
+          <Link to="/about">
+            <h3 className={`action-container-head`}>
+              About Us
+            </h3>
+          </Link>
+        </Col>
+        <Col span={7} className={`action-container`}>
+          <Link to="/shop">
+            <h3 className={`action-container-head`}>
+              Shop
+            </h3>
+          </Link>
+        </Col>
+        <Col span={7} className={`action-container`}>
+          <Link to="/gallery">
+            <h3 className={`action-container-head`}>
+              Gallery
+            </h3>
+          </Link>
+        </Col>
+      </Row>
     </>
   )
 }
